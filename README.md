@@ -8,7 +8,10 @@ OpenAPI Generator uses [mustache templates](https://github.com/OpenAPITools/open
 
 #### Example command to generate the SDK
 
+**Note:** you will first have to install the `openapi-generator`, which can also be found on [GitHub](https://github.com/OpenAPITools/openapi-generator)
+
 ```bash
+$ pip install pyyaml
 $ python scripts/generate_sdk.py -s node -o ~/openai-node
 ```
 
