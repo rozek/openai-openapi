@@ -88,6 +88,11 @@ def generate_sdk(sanitized_spec_path, sdk_type, output_path):
             __file__), "../sdk-template-overrides/typescript-axios")
         os.system(
             f"openapi-generator generate -i {sanitized_spec_path} -g typescript-axios -o {output_path} -p supportsES6=true -t {template_override_path}")
+    elif sdk_type == "javascript":
+        template_override_path = os.path.join(os.path.dirname(
+            __file__), "../sdk-template-overrides/typescript-axios")
+        os.system(
+            f"openapi-generator generate -i {sanitized_spec_path} -g javascript -o {output_path} -p supportsES6=true -t {template_override_path}")
     else:
         print(f"Unsupported SDK type {sdk_type}, skipping SDK generation")
 
