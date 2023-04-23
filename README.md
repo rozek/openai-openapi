@@ -16,7 +16,7 @@ OpenAPI Generator uses [mustache templates](https://github.com/OpenAPITools/open
 
 ```bash
 $ pip install pyyaml
-$ python scripts/generate_sdk.py -s node -o ~/openai-node
+$ python scripts/generate_sdk.py -s node -o openai-node
 ```
 
 #### Node.js specific details
