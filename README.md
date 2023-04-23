@@ -2,7 +2,7 @@
 
 This repository contains an [OpenAPI](https://www.openapis.org/) specification for the [OpenAI API](https://beta.openai.com/docs), as well as a script that uses [OpenAPI Generator](https://openapi-generator.tech/) to auto-generate client SDKs from the specification.
 
-> Nota bene: this repository is basically just a copy of its [original](https://github.com/openai/openai-openapi) with some corrections in this ReadMe file.
+> Nota bene: this repository is basically just a copy of its [original](https://github.com/openai/openai-openapi) with some corrections and enhancements in this ReadMe file and the SDK generator script.
 
 > **Note:** if you plan to create SDKs from this specification, you will first have to install the [openapi-generator](https://github.com/OpenAPITools/openapi-generator)
 >
