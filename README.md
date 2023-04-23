@@ -4,18 +4,29 @@ This repository contains an [OpenAPI](https://www.openapis.org/) specification f
 
 > Nota bene: this repository is basically just a copy of its [original](https://github.com/openai/openai-openapi) with some corrections in this ReadMe file.
 
-OpenAPI Generator uses [mustache templates](https://github.com/OpenAPITools/openapi-generator/tree/master/modules/openapi-generator/src/main/resources) to generate code — the files in the `sdk-template-overrides` folder override the corresponding built-in template files with small edits required for the OpenAI SDKs. More detail on each currently generated SDK is provided below.
-
-## Node.js
-
-#### Example command to generate the SDK
-
-> **Note:** you will first have to install the [openapi-generator](https://github.com/OpenAPITools/openapi-generator)
+> **Note:** if you plan to create SDKs from this specification, you will first have to install the [openapi-generator](https://github.com/OpenAPITools/openapi-generator)
 >
 > If you choose to do so using `npm`, you will additionally have to rename the created executable `openapi-generator-cli` to `openapi-generator` - as that is the name expected by the Python script in this repository
 
+> Finally, you will also have to install YAML support for Python, e.g. using
+>
+> `pip install pyyaml`
+
+> Currently, the generator script only supports `javascript` and `node` as targets
+
+OpenAPI Generator uses [mustache templates](https://github.com/OpenAPITools/openapi-generator/tree/master/modules/openapi-generator/src/main/resources) to generate code — the files in the `sdk-template-overrides` folder override the corresponding built-in template files with small edits required for the OpenAI SDKs. More detail on each currently generated SDK is provided below.
+
+## SDK Generation Examples ##
+
+### JavaScript ###
+
 ```bash
-$ pip install pyyaml
+$ python scripts/generate_sdk.py -s javascript -o openai-js
+```
+
+### Node.js ###
+
+```bash
 $ python scripts/generate_sdk.py -s node -o openai-node
 ```
 
