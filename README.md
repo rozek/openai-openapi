@@ -8,7 +8,7 @@ OpenAPI Generator uses [mustache templates](https://github.com/OpenAPITools/open
 
 #### Example command to generate the SDK
 
-> **Note:** you will first have to install the [openapi-generator](https://github.com/OpenAPITools/openapi-generator) - just choose the method you like most.
+> **Note:** you will first have to install the [openapi-generator](https://github.com/OpenAPITools/openapi-generator)!
 
 ```bash
 $ pip install pyyaml
