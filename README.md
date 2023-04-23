@@ -12,7 +12,7 @@ OpenAPI Generator uses [mustache templates](https://github.com/OpenAPITools/open
 
 > **Note:** you will first have to install the [openapi-generator](https://github.com/OpenAPITools/openapi-generator)
 >
-> If you choose to do so using `npm`, you will additionally have to rename (or copy) the created executable `openapi-generator-cli` to `openapi-generator` - as that is the name expected by the Python script in this repository
+> If you choose to do so using `npm`, you will additionally have to rename the created executable `openapi-generator-cli` to `openapi-generator` - as that is the name expected by the Python script in this repository
 
 ```bash
 $ pip install pyyaml
